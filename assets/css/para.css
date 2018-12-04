@@ -20,8 +20,58 @@
     margin-left: 0; }
 
 .scene {
-    margin: 0;
-    padding: 0; }
+  margin-left: 6.5em;
+ margin-right: auto;
+ align-items: center;
+ justify-content: center;
+   }
+
+
+   @media only screen and (max-width: 320px) {
+       .scene {
+           margin-left: -01em;
+          margin-right: auto;
+          align-items: center;
+          justify-content: center;
+         }
+   }
+
+   @media only screen and (min-width: 321px) and (max-width: 365px) {
+       .scene {
+           margin-left: 0.5em;
+          margin-right: auto;
+          align-items: center;
+          justify-content: center;
+         }
+   }
+
+   @media only screen and (min-width: 366px) and (max-width: 375px) {
+       .scene {
+           margin-left: 0.5em;
+          margin-right: auto;
+          align-items: center;
+          justify-content: center;
+         }
+   }
+
+   @media only screen and (min-width: 376px) and (max-width: 411px) {
+       .scene {
+           margin-left: 2em;
+          margin-right: auto;
+          align-items: center;
+          justify-content: center;
+         }
+   }
+
+   @media only screen and (min-width: 414px) and (max-width: 567px) {
+       .scene {
+           margin-left: 2em;
+          margin-right: auto;
+          align-items: center;
+          justify-content: center;
+         }
+   }
+
 .scene button {
     left: 10%;
     top: 260px;
