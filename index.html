@@ -1,9 +1,122 @@
-<!DOCTYPE html>
+
+<!DOCTYPE HTML>
 <html>
-<body>
+    <head>
+	<title>Asthra '19'</title>
+	<meta charset="utf-8" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/para.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    </head>
+    <body class="is-preload">
+	<!-- Wrapper -->
+	<div id="wrapper"style = "
+	     position:relative; 
+	     z-index:2">
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+	    <!-- Header -->
+	    <header id="header">
+		<div class="logo">
+		    <span class="icon fa-diamond"></span>
+		</div>
+		<div class="content">
+		    <div class="inner">
+			<div id="container" class="container" style = "
+				 position:relative; 
+				 z-index:1">
+			    <div id="scene" class="scene" style="    margin-left: 6.5em;
+				     margin-right: auto;
+				     align-items: center;
 
-</body>
+				     justify-content: center;">
+				<div data-depth="0.80"><img src="images/layer2.png" style="width:300px;height:300px;"></div>
+				<div data-depth="0.60"><img src="images/layer3.png" style="width:300px;height:300px;"></div>
+				<div data-depth="0.40"><img src="images/layer4.png" style="width:300px;height:300px;"></div>
+				<div data-depth="0.20"><img src="images/layer5.png" style="width:300px;height:300px;"></div>
+				<div data-depth="0.00"><img src="images/layer6.png" style="width:300px;height:300px;"></div>
+				<div data-depth="0.00"><img src="images/Asthra.png" alt="Logo" style="width:300px;height:225px;"></div>
+			    </div></div>
+
+			    <h1>Asthra 2019</h1>
+			    <p>ST.JOSEPH'S COLLEGE OF ENGINEERING AND TECHNOLOGY, PALAI<br />
+				<h3>JANUARY 31|FEBRUARY 1</h3></p>
+		    </div>
+		</div>
+		<table class="countdownContainer">
+		    <tr class="info">
+			<td id="days">120</td>
+			<td id="hours">4</td>
+			<td id="minutes">12</td>
+			<td id="seconds">22</td>
+		    </tr>
+		    <tr>
+			<td>Days</td>
+			<td>Hours</td>
+			<td>Minutes</td>
+			<td>Seconds</td>
+		    </tr>
+		</table>
+	</div>
+
+	<script type="text/javascript">
+
+	 function countdown(){
+	     var now = new Date();
+	     var eventDate = new Date(now.getFullYear(), 12, 31);
+
+	     var currentTiime = now.getTime();
+	     var eventTime = eventDate.getTime();
+
+	     var remTime = eventTime - currentTiime;
+
+	     var s = Math.floor(remTime / 1000);
+	     var m = Math.floor(s / 60);
+	     var h = Math.floor(m / 60);
+	     var d = Math.floor(h / 24);
+
+	     h %= 24;
+	     m %= 60;
+	     s %= 60;
+
+	     h = (h < 10) ? "0" + h : h;
+	     m = (m < 10) ? "0" + m : m;
+	     s = (s < 10) ? "0" + s : s;
+
+	     document.getElementById("days").textContent = d;
+	     document.getElementById("days").innerText = d;
+
+	     document.getElementById("hours").textContent = h;
+	     document.getElementById("minutes").textContent = m;
+	     document.getElementById("seconds").textContent = s;
+
+	     setTimeout(countdown, 1000);
+	 }
+
+	 countdown();
+	 var scene = document.getElementById('scene');
+	 var parallaxInstance = new Parallax(scene);
+	</script>
+	    </header>
+
+	    <!-- Footer -->
+	    <footer id="footer">
+		Copyleft <span class="copy-left">&copy;</span> 
+		2018 <Asthra19>
+	    </footer>
+
+	</div>
+
+	<!-- BG -->
+	<div id="bg"></div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+    </body>
 </html>
